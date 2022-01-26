@@ -36,14 +36,66 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
     
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    alert("El Perimetro del Cuadrado es " + perimetro);
 }
 function calcularAreaCuadrado(){
     const input = document.getElementById("InputCuadrado");
+    const value = input.value;    
+    const area = areaCuadrado(value);
+    alert("El area del Cuadrado es " + area);
+}
+
+//Triangulo
+
+function calcularPerimetroTriangulo(){
+    const lado1 = document.getElementById("InputTriangulo1");
+    const value1 = lado1.value;
+    const valor1 = parseInt(value1)
+
+    const lado2 = document.getElementById("InputTriangulo2");
+    const value2 = lado2.value;
+    const valor2 = parseInt(value2)
+
+    const base = document.getElementById("InputTriangulo3");
+    const value3 = base.value;
+    const valor3 = parseInt(value3)
+    
+    const perimetro = perimetroTriangulo(valor1, valor2, valor3);
+    alert("El perimetro del Triangulo es " + perimetro);    
+}
+function calcularAreaTriangulo(){
+    const base = document.getElementById("InputTriangulo3");
+    const value3 = base.value;
+
+    const altura = document.getElementById("InputTriangulo4");
+    const value4 = altura.value;
+    
+    const area = areaTriangulo(value3, value4);
+    alert("El area del Triangulo es " + area);
+}
+
+//circulo
+
+function calcularDiametroCirculo(){
+    const input = document.getElementById("InputCirculo");
     const value = input.value;
     
-    const area = areaCuadrado(value);
-    alert(area);
+    const diametro = diametroCirculo(value);
+    alert("El diametro del Circulo es " + diametro);
+}
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("InputCirculo");
+    const value = input.value;
+    
+    const perimetro = perimetroCirculo(value);
+    alert("El perimetro del Circulo es " + perimetro);
+}
+function calcularAreaCirculo(){
+    const input = document.getElementById("InputCirculo");
+    const value = input.value;
+    
+    const area = areaCirculo(value);
+    alert("El area del Circulo es " + area);
 }
 
 
